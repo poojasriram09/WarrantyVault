@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "314056451501",
+    "project_id": "warrantyvault-8eb66",
+    "storage_bucket": "warrantyvault-8eb66.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314056451501:android:b0844658f42c6d8a6a2d24",
+        "android_client_info": {
+          "package_name": "com.warrantyvault.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "314056451501-53gahsfmce1m1j7qicl0hhlj7k2ui4cq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.warrantyvault.app",
+            "certificate_hash": "8bddfc2812bc7cd2f3d7d4af018c33561336277d"
+          }
+        },
+        {
+          "client_id": "314056451501-h8q6p0dbbkek6ijpfucpt93hi99i72qc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD87HKrT0-gzsAOLuHlXHeDjggeED7hg4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "314056451501-h8q6p0dbbkek6ijpfucpt93hi99i72qc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

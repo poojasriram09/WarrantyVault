@@ -1,0 +1,18 @@
+{
+  "greeting": "Hi! I'm WarrantyBot 👋\nI can help you track warranties, warn you about expiring ones, guide you through claims, and answer any warranty questions. What can I help you with?",
+  "online": "Online",
+  "placeholder": "Ask WarrantyBot…",
+  "quickPrompts": {
+    "expiringSoon": "Which warranties expire soon?",
+    "fileClaim": "How do I file a claim?",
+    "analyzePortfolio": "Analyze my warranty portfolio",
+    "addProduct": "How do I add a product?"
+  },
+  "errors": {
+    "quotaExceeded": "API quota exceeded. Please try again later.",
+    "invalidKey": "Invalid API key. Please check your configuration.",
+    "networkError": "Network error — check your internet connection and try again.",
+    "invalidRequest": "Invalid request. Please try rephrasing your message.",
+    "generic": "Something went wrong. Please try again."
+  }
+}

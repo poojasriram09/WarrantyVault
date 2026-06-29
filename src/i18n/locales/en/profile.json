@@ -1,0 +1,20 @@
+{
+  "title": "Profile",
+  "subtitle": "Manage your account",
+  "googleAccount": "Google Account",
+  "emailPassword": "Email & Password",
+  "memberSince": "Member since {{date}}",
+  "account": "Account",
+  "email": "Email",
+  "password": "Password",
+  "resetHint": "Send a reset link to your email",
+  "reset": "Reset",
+  "sent": "Sent!",
+  "signOut": "Sign Out",
+  "toasts": {
+    "nameUpdated": "Name updated!",
+    "nameUpdateFail": "Failed to update name",
+    "resetSent": "Password reset email sent!",
+    "resetFail": "Failed to send reset email"
+  }
+}

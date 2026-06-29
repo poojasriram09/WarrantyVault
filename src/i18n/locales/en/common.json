@@ -1,0 +1,66 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "myWarranties": "My Warranties",
+    "addProduct": "Add Product",
+    "importGmail": "Import from Gmail",
+    "digitalLocker": "Digital Locker",
+    "claimAssistant": "Claim Assistant",
+    "serviceCenters": "Service Centers",
+    "adminPanel": "Admin Panel",
+    "profile": "Profile",
+    "signOut": "Sign Out",
+    "home": "Home",
+    "warranties": "Warranties",
+    "add": "Add",
+    "locker": "Locker",
+    "more": "More"
+  },
+  "brand": {
+    "tagline": "AI-Powered Tracker"
+  },
+  "status": {
+    "active": "Active",
+    "expiring": "Expiring Soon",
+    "expired": "Expired"
+  },
+  "actions": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search",
+    "clear": "Clear",
+    "upload": "Upload",
+    "view": "View",
+    "download": "Download",
+    "back": "Back",
+    "continue": "Continue",
+    "submit": "Submit",
+    "tryAgain": "Try again",
+    "review": "Review"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "markAllRead": "Mark all read",
+    "empty": "No notifications yet"
+  },
+  "errors": {
+    "sessionNotLoaded": "User session not loaded. Please refresh the page.",
+    "generic": "Something went wrong. Please try again."
+  },
+  "categories": {
+    "electronics": "Electronics",
+    "appliances": "Appliances",
+    "furniture": "Furniture",
+    "automobile": "Automobile",
+    "jewelry": "Jewelry",
+    "other": "Other"
+  },
+  "warrantyTypes": {
+    "manufacturer": "Manufacturer",
+    "extended": "Extended",
+    "retailer": "Retailer",
+    "insurance": "Insurance"
+  }
+}

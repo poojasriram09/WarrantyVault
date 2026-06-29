@@ -1,0 +1,20 @@
+{
+  "title": "प्रोफाइल",
+  "subtitle": "तुमचे खाते व्यवस्थापित करा",
+  "googleAccount": "Google खाते",
+  "emailPassword": "ईमेल आणि पासवर्ड",
+  "memberSince": "{{date}} पासून सदस्य",
+  "account": "खाते",
+  "email": "ईमेल",
+  "password": "पासवर्ड",
+  "resetHint": "तुमच्या ईमेलवर रीसेट लिंक पाठवा",
+  "reset": "रीसेट",
+  "sent": "पाठवले!",
+  "signOut": "साइन आउट",
+  "toasts": {
+    "nameUpdated": "नाव अपडेट झाले!",
+    "nameUpdateFail": "नाव अपडेट करण्यात अयशस्वी",
+    "resetSent": "पासवर्ड रीसेट ईमेल पाठवला!",
+    "resetFail": "रीसेट ईमेल पाठवण्यात अयशस्वी"
+  }
+}

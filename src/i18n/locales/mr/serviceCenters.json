@@ -1,0 +1,21 @@
+{
+  "title": "सर्व्हिस सेंटर",
+  "subtitle": "जवळचे अधिकृत सर्व्हिस सेंटर शोधा",
+  "listView": "यादी",
+  "mapView": "नकाशा",
+  "brandPh": "ब्रँड (उदा. Samsung)",
+  "allAreas": "सर्व भाग (मुंबई)",
+  "search": "शोधा",
+  "clear": "साफ करा",
+  "noResults": "परिणाम सापडले नाहीत",
+  "noResultsHint": "वेगळा ब्रँड किंवा शहराचे नाव वापरा.",
+  "empty": "अजून सर्व्हिस सेंटर नाहीत",
+  "emptyHint": "डेटाबेसमध्ये जोडल्यावर सर्व्हिस सेंटर डेटा येथे दिसेल.",
+  "resultCount_one": "{{count}} परिणाम",
+  "resultCount_other": "{{count}} परिणाम",
+  "warrantyInfo": "वॉरंटी माहिती",
+  "openInMaps": "नकाशात उघडा",
+  "getDirections": "दिशानिर्देश मिळवा",
+  "mapHint": "मार्कर दाखवण्यासाठी सर्व्हिस सेंटरमध्ये शहराचे नाव जोडा",
+  "mapAttribution": "डार्क मॅप टाइल्स CARTO कडून · OpenStreetMap योगदानकर्ते"
+}

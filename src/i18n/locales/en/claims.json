@@ -1,0 +1,54 @@
+{
+  "title": "Claim Assistant",
+  "subtitle": "Complete guidance for warranty claim",
+  "steps": {
+    "selectProduct": "Select Product",
+    "describeIssue": "Describe Issue",
+    "reviewSubmit": "Review & Submit"
+  },
+  "step1": {
+    "heading": "Select a product",
+    "hint": "Only products with active or expiring warranties can be claimed.",
+    "emptyTitle": "No claimable warranties",
+    "emptySubtitle": "All your warranties have expired. Add a new product to get started."
+  },
+  "step2": {
+    "heading": "Describe the issue",
+    "product": "Product: {{name}}",
+    "issueLabel": "Issue summary *",
+    "issuePh": "e.g. Screen not turning on after drop",
+    "detailLabel": "Detailed description",
+    "optional": "(optional)",
+    "detailPh": "Describe when the issue started, steps to reproduce, and any error messages…"
+  },
+  "step3": {
+    "heading": "Review your claim",
+    "hint": "Confirm the details before submitting.",
+    "product": "Product",
+    "brand": "Brand",
+    "warrantyExpires": "Warranty expires",
+    "issue": "Issue",
+    "details": "Details",
+    "empty": "—",
+    "aiTip": "AI Tip: ",
+    "aiTipText": "Keep your original purchase receipt and packaging ready. Most manufacturers require proof of purchase to process warranty claims.",
+    "warrantyLink": "Extend / Renew Warranty",
+    "visitSite": "Visit Site",
+    "nearbyCenters": "Nearby Service Centers",
+    "brandFilter": "— {{brand}}",
+    "loadingCenters": "Loading service centers…",
+    "noCenters": "No service centers found for this brand.",
+    "directions": "Directions"
+  },
+  "submit": "Submit Claim",
+  "success": {
+    "title": "Claim Submitted",
+    "message": "Your claim for {{product}} has been recorded. Keep your purchase receipt ready — the manufacturer may request it during processing.",
+    "newClaim": "New Claim",
+    "viewWarranties": "View Warranties"
+  },
+  "errors": {
+    "noProduct": "No product selected.",
+    "sessionNotLoaded": "User session not loaded. Please refresh and try again."
+  }
+}

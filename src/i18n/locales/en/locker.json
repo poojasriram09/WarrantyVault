@@ -1,0 +1,28 @@
+{
+  "title": "Digital Locker",
+  "subtitle": "All your uploaded receipts and invoices in one place",
+  "docCount_one": "{{count}} document stored",
+  "docCount_other": "{{count}} documents stored",
+  "searchPh": "Search by product or filename…",
+  "filters": {
+    "all": "All",
+    "receipt": "Receipt",
+    "invoice": "Invoice",
+    "manual": "Manual",
+    "insurance": "Insurance",
+    "other": "Other"
+  },
+  "empty": {
+    "title": "Your locker is empty",
+    "subtitle": "Upload a receipt or invoice when adding a product — it will appear here automatically."
+  },
+  "noMatch": {
+    "title": "No documents match",
+    "subtitle": "Try adjusting your search or filter."
+  },
+  "pdf": "PDF",
+  "view": "View",
+  "download": "Download",
+  "downloading": "Downloading…",
+  "unknownProduct": "Unknown Product"
+}

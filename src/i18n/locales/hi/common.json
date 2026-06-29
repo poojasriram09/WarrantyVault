@@ -1,0 +1,66 @@
+{
+  "nav": {
+    "dashboard": "डैशबोर्ड",
+    "myWarranties": "मेरी वारंटी",
+    "addProduct": "उत्पाद जोड़ें",
+    "importGmail": "Gmail से आयात करें",
+    "digitalLocker": "डिजिटल लॉकर",
+    "claimAssistant": "क्लेम सहायक",
+    "serviceCenters": "सर्विस सेंटर",
+    "adminPanel": "एडमिन पैनल",
+    "profile": "प्रोफ़ाइल",
+    "signOut": "साइन आउट",
+    "home": "होम",
+    "warranties": "वारंटी",
+    "add": "जोड़ें",
+    "locker": "लॉकर",
+    "more": "और"
+  },
+  "brand": {
+    "tagline": "AI-संचालित ट्रैकर"
+  },
+  "status": {
+    "active": "सक्रिय",
+    "expiring": "जल्द समाप्त",
+    "expired": "समाप्त"
+  },
+  "actions": {
+    "save": "सहेजें",
+    "cancel": "रद्द करें",
+    "delete": "हटाएं",
+    "edit": "संपादित करें",
+    "search": "खोजें",
+    "clear": "साफ़ करें",
+    "upload": "अपलोड करें",
+    "view": "देखें",
+    "download": "डाउनलोड",
+    "back": "पीछे",
+    "continue": "जारी रखें",
+    "submit": "जमा करें",
+    "tryAgain": "पुनः प्रयास करें",
+    "review": "समीक्षा"
+  },
+  "notifications": {
+    "title": "सूचनाएं",
+    "markAllRead": "सब पढ़ा हुआ करें",
+    "empty": "अभी कोई सूचना नहीं"
+  },
+  "errors": {
+    "sessionNotLoaded": "उपयोगकर्ता सत्र लोड नहीं हुआ। कृपया पृष्ठ रीफ़्रेश करें।",
+    "generic": "कुछ गलत हो गया। कृपया पुनः प्रयास करें।"
+  },
+  "categories": {
+    "electronics": "इलेक्ट्रॉनिक्स",
+    "appliances": "उपकरण",
+    "furniture": "फ़र्नीचर",
+    "automobile": "ऑटोमोबाइल",
+    "jewelry": "आभूषण",
+    "other": "अन्य"
+  },
+  "warrantyTypes": {
+    "manufacturer": "निर्माता",
+    "extended": "विस्तारित",
+    "retailer": "रिटेलर",
+    "insurance": "बीमा"
+  }
+}

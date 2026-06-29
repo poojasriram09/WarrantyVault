@@ -1,0 +1,22 @@
+{
+  "badge": "AI-Powered Dashboard",
+  "welcome": "Welcome back, {{name}} 👋",
+  "subtitle": "Here's your warranty overview",
+  "stats": {
+    "totalProducts": "Total Products",
+    "active": "Active",
+    "expiringSoon": "Expiring Soon",
+    "expired": "Expired"
+  },
+  "charts": {
+    "warrantiesAdded": "Warranties Added",
+    "monthlyHistory": "Monthly registration history",
+    "byCategory": "By Category",
+    "productDistribution": "Product distribution"
+  },
+  "recent": {
+    "title": "Recent Warranties",
+    "viewAll": "View all →"
+  },
+  "addProduct": "Add Product"
+}

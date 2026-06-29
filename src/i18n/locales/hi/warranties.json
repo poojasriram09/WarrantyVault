@@ -1,0 +1,33 @@
+{
+  "title": "मेरी वारंटी",
+  "count_one": "{{count}} वारंटी",
+  "count_other": "{{count}} वारंटी",
+  "addProduct": "उत्पाद जोड़ें",
+  "empty": {
+    "title": "कोई वारंटी नहीं मिली",
+    "subtitle": "वारंटी ट्रैक करने के लिए अपना पहला उत्पाद जोड़ें।"
+  },
+  "deleteConfirm": "इस वारंटी को हटाएं?",
+  "deleteSuccess": "वारंटी हटा दी गई",
+  "deleteFail": "वारंटी हटाने में विफल",
+  "card": {
+    "purchase": "खरीद",
+    "expires": "समाप्ति",
+    "daysLeft": "{{count}} दिन शेष",
+    "daysExpired": "{{count}} दिन पहले"
+  },
+  "filters": {
+    "all": "सभी",
+    "active": "सक्रिय",
+    "expiring": "समाप्त हो रही",
+    "expired": "समाप्त",
+    "year": "वर्ष",
+    "month": "महीना",
+    "sort": "क्रम",
+    "newest": "नवीनतम",
+    "oldest": "पुरानी",
+    "expirySoonest": "जल्द समाप्त",
+    "expiryLatest": "देर से समाप्त",
+    "searchPlaceholder": "वारंटी खोजें..."
+  }
+}

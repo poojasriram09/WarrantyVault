@@ -1,0 +1,21 @@
+{
+  "title": "Service Centers",
+  "subtitle": "Find authorized service centers near you",
+  "listView": "List",
+  "mapView": "Map",
+  "brandPh": "Brand (e.g. Samsung)",
+  "allAreas": "All Areas (Mumbai)",
+  "search": "Search",
+  "clear": "Clear",
+  "noResults": "No results found",
+  "noResultsHint": "Try a different brand or city name.",
+  "empty": "No service centers yet",
+  "emptyHint": "Service center data will appear here once added to the database.",
+  "resultCount_one": "{{count}} result",
+  "resultCount_other": "{{count}} results",
+  "warrantyInfo": "Warranty Info",
+  "openInMaps": "Open in Maps",
+  "getDirections": "Get Directions",
+  "mapHint": "Add city names to service centers to show markers",
+  "mapAttribution": "Dark map tiles by CARTO · OpenStreetMap contributors"
+}

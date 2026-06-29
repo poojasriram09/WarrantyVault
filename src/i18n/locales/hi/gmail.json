@@ -1,0 +1,27 @@
+{
+  "title": "Gmail से आयात करें",
+  "subtitle": "उत्पाद इनवॉइस के लिए Gmail स्कैन करें और वारंटी विवरण ऑटो-फ़िल करें",
+  "step1": "चरण 1 — इनवॉइस फ़ाइल चुनें",
+  "emailsFound": "{{count}} ईमेल मिले",
+  "connectHint": "उत्पाद इनवॉइस स्कैन करने के लिए Gmail कनेक्ट करें",
+  "connectBtn": "Gmail कनेक्ट करें",
+  "waitingPermission": "Google अनुमति की प्रतीक्षा…",
+  "searchingInbox": "इनवॉइस के लिए इनबॉक्स खोजा जा रहा है…",
+  "runningOcr": "अटैचमेंट पर OCR चल रहा है…",
+  "noEmails": "अटैचमेंट वाले कोई इनवॉइस ईमेल नहीं मिले।",
+  "noSubject": "(कोई विषय नहीं)",
+  "step2": "चरण 2 — समीक्षा करें और विवरण सहेजें",
+  "addToWarranties": "वारंटी में जोड़ें",
+  "toasts": {
+    "noMatching": "कोई मैचिंग इनवॉइस ईमेल नहीं मिला।",
+    "noAttachments": "ईमेल मिले लेकिन किसी में इमेज/PDF अटैचमेंट नहीं था।",
+    "gmailNotEnabled": "Google Cloud Console में Gmail API सक्षम नहीं है।",
+    "accessDenied": "Gmail एक्सेस अस्वीकृत। कृपया पॉपअप आने पर एक्सेस दें।",
+    "popupClosed": "पॉपअप बंद हो गया। कृपया पुनः प्रयास करें।",
+    "gmailError": "Gmail त्रुटि: {{message}}",
+    "extracted": "{{filename}} से फ़ील्ड निकाले गए",
+    "extractFail": "अटैचमेंट से निकालने में विफल।",
+    "success": "उत्पाद सफलतापूर्वक जोड़ा गया!",
+    "fail": "उत्पाद जोड़ने में विफल"
+  }
+}

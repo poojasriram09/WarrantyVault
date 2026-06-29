@@ -1,0 +1,93 @@
+{
+  "navbar": {
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "pricing": "Pricing",
+    "signIn": "Sign In",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "badge": "AI-Powered Warranty Intelligence",
+    "heading1": "Stop Losing Money",
+    "heading2": "on ",
+    "heading3": "Expired Warranties.",
+    "sub": "WarrantyVault scans your receipts with AI, tracks every expiry date, and guides you through claims — so you never waste another rupee.",
+    "cta": "Start",
+    "altCta": "I have an account"
+  },
+  "features": {
+    "badge": "Core Features",
+    "heading": "Everything you need to",
+    "headingHighlight": "protect your purchases",
+    "sub": "From scanning receipts to filing claims, WarrantyVault handles the entire warranty lifecycle.",
+    "ocrTitle": "Smart OCR Scanning",
+    "ocrDesc": "Drop any invoice — printed or handwritten. Our vision AI extracts every detail in seconds.",
+    "reminderTitle": "Expiry Reminders",
+    "reminderDesc": "Get alerts 30 and 7 days before warranties expire. Never miss a claim window again.",
+    "claimTitle": "AI Claim Assistant",
+    "claimDesc": "Step-by-step claim guidance powered by AI. Maximizes your success rate with intelligent recommendations.",
+    "mapTitle": "Service Center Finder",
+    "mapDesc": "Locate authorized service centers nearby. Filtered by brand, area, with warranty links and directions.",
+    "lockerTitle": "Digital Document Vault",
+    "lockerDesc": "Receipts, invoices, and warranty cards — encrypted and accessible from anywhere, anytime.",
+    "analyticsTitle": "Warranty Analytics",
+    "analyticsDesc": "Visual dashboard with status breakdown, expiry timeline, and portfolio health at a glance."
+  },
+  "howItWorks": {
+    "badge": "Setup in 60 Seconds",
+    "heading": "How it ",
+    "headingHighlight": "works",
+    "sub": "Three simple steps to warranty peace of mind.",
+    "step1Title": "Upload Receipt",
+    "step1Desc": "Snap a photo or upload a PDF of any invoice. Our OCR AI extracts all warranty details instantly.",
+    "step2Title": "Track Automatically",
+    "step2Desc": "WarrantyVault organizes your warranties by category, status, and expiry — with smart reminders.",
+    "step3Title": "Claim with Confidence",
+    "step3Desc": "When something breaks, our AI claim wizard guides you through the entire claim process step-by-step."
+  },
+  "pricing": {
+    "badge": "Simple Pricing",
+    "heading": "Choose your ",
+    "headingHighlight": "plan",
+    "sub": "Start free, upgrade when you need more power.",
+    "free": "Free",
+    "pro": "Pro",
+    "business": "Business",
+    "forever": "forever",
+    "perMonth": "/month",
+    "mostPopular": "Most Popular",
+    "freeDesc": "Perfect for getting started",
+    "proDesc": "For individuals who want full control",
+    "businessDesc": "For teams and enterprises",
+    "freeCta": "Get Started Free",
+    "proCta": "Upgrade to Pro",
+    "businessCta": "Contact Sales",
+    "feat_5warranties": "Up to 5 warranties",
+    "feat_basicOcr": "Basic OCR scanning",
+    "feat_emailAlerts": "Email expiry alerts",
+    "feat_dashboard": "Warranty dashboard",
+    "feat_claimAssistant": "AI Claim Assistant",
+    "feat_unlimited": "Unlimited warranties",
+    "feat_priorityOcr": "Priority OCR (vision AI)",
+    "feat_locker": "Digital Locker vault",
+    "feat_gmail": "Gmail invoice import",
+    "feat_family": "Family sharing (5 members)",
+    "feat_prioritySupport": "Priority support",
+    "feat_everythingPro": "Everything in Pro",
+    "feat_team": "Multi-user team access",
+    "feat_bulkApi": "Bulk upload & API access",
+    "feat_analytics": "Advanced analytics",
+    "feat_manager": "Dedicated account manager",
+    "feat_integrations": "Custom integrations"
+  },
+  "cta": {
+    "heading": "Your warranties deserve",
+    "headingHighlight": "smarter protection.",
+    "sub": "Join thousands who never miss a warranty claim. Set up your vault in under a minute.",
+    "button": "Create Your Vault",
+    "altLink": "Already have an account?"
+  },
+  "footer": {
+    "copyright": "© 2026 WarrantyVault. Built for HackHive."
+  }
+}

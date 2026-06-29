@@ -1,0 +1,28 @@
+{
+  "title": "Add Product",
+  "subtitle": "Register a product to track its warranty",
+  "fields": {
+    "productName": "Product Name *",
+    "productNamePh": "e.g. Samsung Galaxy S24",
+    "brand": "Brand",
+    "brandPh": "e.g. Samsung",
+    "modelNumber": "Model Number",
+    "modelNumberPh": "e.g. SM-S921B",
+    "serialNumber": "Serial Number",
+    "serialNumberPh": "e.g. R3CR901XXXXX",
+    "category": "Category",
+    "purchaseDate": "Purchase Date *",
+    "price": "Purchase Price (₹)",
+    "pricePh": "e.g. 45000",
+    "retailer": "Retailer",
+    "retailerPh": "e.g. Amazon, Flipkart",
+    "warrantyDuration": "Warranty Duration *",
+    "warrantyType": "Warranty Type",
+    "notes": "Notes",
+    "notesPh": "Any additional notes..."
+  },
+  "save": "Save Product",
+  "cancel": "Cancel",
+  "success": "Product added successfully!",
+  "fail": "Failed to add product: {{message}}"
+}

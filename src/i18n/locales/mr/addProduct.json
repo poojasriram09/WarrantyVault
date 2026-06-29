@@ -1,0 +1,28 @@
+{
+  "title": "उत्पादन जोडा",
+  "subtitle": "वॉरंटी ट्रॅक करण्यासाठी उत्पादन नोंदवा",
+  "fields": {
+    "productName": "उत्पादनाचे नाव *",
+    "productNamePh": "उदा. Samsung Galaxy S24",
+    "brand": "ब्रँड",
+    "brandPh": "उदा. Samsung",
+    "modelNumber": "मॉडेल नंबर",
+    "modelNumberPh": "उदा. SM-S921B",
+    "serialNumber": "सीरियल नंबर",
+    "serialNumberPh": "उदा. R3CR901XXXXX",
+    "category": "श्रेणी",
+    "purchaseDate": "खरेदी तारीख *",
+    "price": "खरेदी किंमत (₹)",
+    "pricePh": "उदा. 45000",
+    "retailer": "विक्रेता",
+    "retailerPh": "उदा. Amazon, Flipkart",
+    "warrantyDuration": "वॉरंटी कालावधी *",
+    "warrantyType": "वॉरंटी प्रकार",
+    "notes": "टीपा",
+    "notesPh": "कोणत्याही अतिरिक्त टीपा..."
+  },
+  "save": "उत्पादन जतन करा",
+  "cancel": "रद्द करा",
+  "success": "उत्पादन यशस्वीरित्या जोडले!",
+  "fail": "उत्पादन जोडण्यात अयशस्वी: {{message}}"
+}

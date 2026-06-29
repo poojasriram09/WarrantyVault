@@ -1,0 +1,33 @@
+{
+  "title": "माझ्या वॉरंटी",
+  "count_one": "{{count}} वॉरंटी",
+  "count_other": "{{count}} वॉरंटी",
+  "addProduct": "उत्पादन जोडा",
+  "empty": {
+    "title": "वॉरंटी सापडल्या नाहीत",
+    "subtitle": "वॉरंटी ट्रॅक करण्यासाठी तुमचे पहिले उत्पादन जोडा."
+  },
+  "deleteConfirm": "ही वॉरंटी हटवायची?",
+  "deleteSuccess": "वॉरंटी हटवली",
+  "deleteFail": "वॉरंटी हटवण्यात अयशस्वी",
+  "card": {
+    "purchase": "खरेदी",
+    "expires": "एक्सपायरी",
+    "daysLeft": "{{count}} दिवस बाकी",
+    "daysExpired": "{{count}} दिवसांपूर्वी"
+  },
+  "filters": {
+    "all": "सर्व",
+    "active": "सक्रिय",
+    "expiring": "संपत आहे",
+    "expired": "संपलेली",
+    "year": "वर्ष",
+    "month": "महिना",
+    "sort": "क्रम",
+    "newest": "नवीनतम",
+    "oldest": "जुन्या",
+    "expirySoonest": "लवकर संपणाऱ्या",
+    "expiryLatest": "उशिरा संपणाऱ्या",
+    "searchPlaceholder": "वॉरंटी शोधा..."
+  }
+}

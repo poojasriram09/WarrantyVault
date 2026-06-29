@@ -1,0 +1,22 @@
+{
+  "badge": "AI-चालित डॅशबोर्ड",
+  "welcome": "पुन्हा स्वागत, {{name}} 👋",
+  "subtitle": "येथे तुमच्या वॉरंटीचे विहंगावलोकन आहे",
+  "stats": {
+    "totalProducts": "एकूण उत्पादने",
+    "active": "सक्रिय",
+    "expiringSoon": "लवकरच संपणार",
+    "expired": "संपलेली"
+  },
+  "charts": {
+    "warrantiesAdded": "जोडलेल्या वॉरंटी",
+    "monthlyHistory": "मासिक नोंदणी इतिहास",
+    "byCategory": "श्रेणीनुसार",
+    "productDistribution": "उत्पादन वितरण"
+  },
+  "recent": {
+    "title": "अलीकडील वॉरंटी",
+    "viewAll": "सर्व पहा →"
+  },
+  "addProduct": "उत्पादन जोडा"
+}

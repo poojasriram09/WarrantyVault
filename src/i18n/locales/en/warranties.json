@@ -1,0 +1,33 @@
+{
+  "title": "My Warranties",
+  "count_one": "{{count}} warranty",
+  "count_other": "{{count}} warranties",
+  "addProduct": "Add Product",
+  "empty": {
+    "title": "No warranties found",
+    "subtitle": "Add your first product to start tracking its warranty."
+  },
+  "deleteConfirm": "Delete this warranty?",
+  "deleteSuccess": "Warranty deleted",
+  "deleteFail": "Failed to delete warranty",
+  "card": {
+    "purchase": "Purchase",
+    "expires": "Expires",
+    "daysLeft": "{{count}}d left",
+    "daysExpired": "{{count}}d ago"
+  },
+  "filters": {
+    "all": "All",
+    "active": "Active",
+    "expiring": "Expiring",
+    "expired": "Expired",
+    "year": "Year",
+    "month": "Month",
+    "sort": "Sort",
+    "newest": "Newest",
+    "oldest": "Oldest",
+    "expirySoonest": "Expiry Soonest",
+    "expiryLatest": "Expiry Latest",
+    "searchPlaceholder": "Search warranties..."
+  }
+}

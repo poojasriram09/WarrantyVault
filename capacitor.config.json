@@ -1,0 +1,16 @@
+{
+  "appId": "com.warrantyvault.app",
+  "appName": "WarrantyVault",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "GoogleAuth": {
+      "scopes": ["profile", "email"],
+      "serverClientId": "314056451501-h8q6p0dbbkek6ijpfucpt93hi99i72qc.apps.googleusercontent.com",
+      "androidClientId": "314056451501-h8q6p0dbbkek6ijpfucpt93hi99i72qc.apps.googleusercontent.com",
+      "forceCodeForRefreshToken": true
+    }
+  }
+}

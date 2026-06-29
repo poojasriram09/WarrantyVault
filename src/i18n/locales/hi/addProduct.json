@@ -1,0 +1,28 @@
+{
+  "title": "उत्पाद जोड़ें",
+  "subtitle": "वारंटी ट्रैक करने के लिए उत्पाद पंजीकृत करें",
+  "fields": {
+    "productName": "उत्पाद का नाम *",
+    "productNamePh": "जैसे Samsung Galaxy S24",
+    "brand": "ब्रांड",
+    "brandPh": "जैसे Samsung",
+    "modelNumber": "मॉडल नंबर",
+    "modelNumberPh": "जैसे SM-S921B",
+    "serialNumber": "सीरियल नंबर",
+    "serialNumberPh": "जैसे R3CR901XXXXX",
+    "category": "श्रेणी",
+    "purchaseDate": "खरीद तिथि *",
+    "price": "खरीद मूल्य (₹)",
+    "pricePh": "जैसे 45000",
+    "retailer": "विक्रेता",
+    "retailerPh": "जैसे Amazon, Flipkart",
+    "warrantyDuration": "वारंटी अवधि *",
+    "warrantyType": "वारंटी प्रकार",
+    "notes": "टिप्पणी",
+    "notesPh": "कोई अतिरिक्त टिप्पणी..."
+  },
+  "save": "उत्पाद सहेजें",
+  "cancel": "रद्द करें",
+  "success": "उत्पाद सफलतापूर्वक जोड़ा गया!",
+  "fail": "उत्पाद जोड़ने में विफल: {{message}}"
+}

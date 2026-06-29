@@ -1,0 +1,27 @@
+{
+  "title": "Import from Gmail",
+  "subtitle": "Scan your Gmail for product invoices and auto-fill warranty details",
+  "step1": "Step 1 — Choose an invoice file",
+  "emailsFound": "{{count}} emails found",
+  "connectHint": "Connect your Gmail to scan for product invoices",
+  "connectBtn": "Connect Gmail",
+  "waitingPermission": "Waiting for Google permission…",
+  "searchingInbox": "Searching your inbox for invoices…",
+  "runningOcr": "Running OCR on attachment…",
+  "noEmails": "No invoice emails with attachments found.",
+  "noSubject": "(No subject)",
+  "step2": "Step 2 — Review & save details",
+  "addToWarranties": "Add to Warranties",
+  "toasts": {
+    "noMatching": "No matching invoice emails found.",
+    "noAttachments": "Emails found but none had image/PDF attachments.",
+    "gmailNotEnabled": "Gmail API is not enabled in Google Cloud Console.",
+    "accessDenied": "Gmail access denied. Please allow access when the popup appears.",
+    "popupClosed": "Popup closed. Please try again.",
+    "gmailError": "Gmail error: {{message}}",
+    "extracted": "Extracted fields from {{filename}}",
+    "extractFail": "Failed to extract from attachment.",
+    "success": "Product added successfully!",
+    "fail": "Failed to add product"
+  }
+}

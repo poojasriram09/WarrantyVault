@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  body { font-family: Calibri, Arial, sans-serif; font-size: 11pt; margin: 72pt; color: #1a1a1a; line-height: 1.6; }
+  h1 { font-size: 26pt; color: #5b21b6; border-bottom: 3px solid #5b21b6; padding-bottom: 8pt; margin-top: 0; }
+  h2 { font-size: 16pt; color: #4f46e5; border-bottom: 1px solid #c4b5fd; padding-bottom: 4pt; margin-top: 24pt; }
+  h3 { font-size: 13pt; color: #7c3aed; margin-top: 16pt; }
+  h4 { font-size: 11pt; color: #6d28d9; margin-top: 12pt; }
+  table { border-collapse: collapse; width: 100%; margin: 12pt 0; }
+  th { background-color: #5b21b6; color: white; padding: 8pt 10pt; text-align: left; font-size: 10pt; }
+  td { padding: 7pt 10pt; border: 1px solid #ddd; font-size: 10pt; vertical-align: top; }
+  tr:nth-child(even) td { background-color: #f5f3ff; }
+  code { background: #f1f5f9; padding: 1pt 4pt; border-radius: 3pt; font-family: Consolas, monospace; font-size: 9.5pt; color: #be185d; }
+  pre { background: #1e1b4b; color: #e2e8f0; padding: 12pt; border-radius: 6pt; font-family: Consolas, monospace; font-size: 9pt; line-height: 1.5; white-space: pre-wrap; }
+  .badge { display: inline-block; background: #ede9fe; color: #5b21b6; padding: 2pt 6pt; border-radius: 4pt; font-size: 9pt; font-weight: bold; margin: 2pt; }
+  .note { background: #fef3c7; border-left: 4pt solid #f59e0b; padding: 8pt 12pt; margin: 10pt 0; border-radius: 0 4pt 4pt 0; }
+  .tip { background: #ecfdf5; border-left: 4pt solid #10b981; padding: 8pt 12pt; margin: 10pt 0; border-radius: 0 4pt 4pt 0; }
+  ul li, ol li { margin-bottom: 4pt; }
+  .section-intro { background: #f5f3ff; border: 1px solid #ddd6fe; padding: 10pt 14pt; border-radius: 6pt; margin: 8pt 0 14pt 0; font-style: italic; color: #4c1d95; }
+  .page-break { page-break-before: always; }
+</style>
+</head>
+<body>
+
+<h1>WarrantyVault — Complete Project Overview</h1>
+<p><em>A beginner-friendly guide to how this project was built, why decisions were made, and what every piece of technology does.</em></p>
+<p><strong>Project:</strong> WarrantyVault — AI-Powered Smart Warranty &amp; Digital Locker System<br>
+<strong>Type:</strong> Full-Stack Web Application (Hackathon Project)<br>
+<strong>Team:</strong> TrioCoders — triocoders9626@gmail.com</p>
+
+<!-- ============================================================ -->
+<h2>1. What Is WarrantyVault?</h2>
+
+<p class="section-intro">Think of WarrantyVault as a smart digital drawer where you store all your product warranties — and the app reminds you before they expire.</p>
+
+<p>When you buy a phone, laptop, fridge, or any product, it comes with a warranty card or invoice. Most people lose these or forget about warranties until it's too late. WarrantyVault solves this by:</p>
+
+<ul>
+  <li><strong>Scanning your invoice/receipt</strong> using OCR (Optical Character Recognition) — just upload a photo and the app reads the details automatically</li>
+  <li><strong>Tracking expiry dates</strong> — you get notified before your warranty expires (7 days, 30 days, etc.)</li>
+  <li><strong>Filing warranty claims</strong> — a 3-step wizard guides you through raising a claim</li>
+  <li><strong>Finding service centers</strong> — shows nearby authorized service centers in Mumbai</li>
+  <li><strong>Importing invoices from Gmail</strong> — scans your email inbox for product purchase emails</li>
+  <li><strong>AI chatbot (WarrantyBot)</strong> — answers questions about your warranties using AI</li>
+</ul>
+
+<!-- ============================================================ -->
+<h2>2. The Thinking Process — How We Approached This</h2>
+
+<p class="section-intro">Before writing a single line of code, we had to answer: "What problem are we solving? Who uses it? What does it need to do?"</p>
+
+<h3>Step 1: Define the Problem</h3>
+<p>The problem is simple — people lose warranties and forget about them. The solution: a digital locker that automatically reads invoices and tracks everything.</p>
+
+<h3>Step 2: Identify the Features (MVP — Minimum Viable Product)</h3>
+<p>We listed the core features first (things without which the app makes no sense):</p>
+<ol>
+  <li>User login &amp; accounts (so data is private per user)</li>
+  <li>Add a product with warranty details</li>
+  <li>View all warranties with their status (active / expiring / expired)</li>
+  <li>Get notifications before expiry</li>
+</ol>
+<p>Then we added advanced features:</p>
+<ol>
+  <li>OCR — read invoices automatically</li>
+  <li>Gmail import — scan emails for invoices</li>
+  <li>AI chatbot</li>
+  <li>Claim assistant</li>
+  <li>Service center finder</li>
+  <li>Admin panel</li>
+</ol>
+
+<h3>Step 3: Choose the Tech Stack</h3>
+<p>We asked: what technologies can handle this, are free/affordable, and are fast to build with? (See Section 3 for full details.)</p>
+
+<h3>Step 4: Design the Database First</h3>
+<p>We figured out what data needs to be stored before writing any code. This is called <em>schema design</em>. If the database structure is wrong, everything built on top of it breaks.</p>
+
+<h3>Step 5: Build in Phases</h3>
+<p>We didn't try to build everything at once. We built Phase 1 (auth + basic warranty tracking), confirmed it worked, then added Phase 2 (OCR, AI), then Phase 3 (service centers, notifications), and so on.</p>
+
+<div class="tip">
+  <strong>Key mindset:</strong> Always get something working first, then improve it. A simple working app is better than a complex broken one.
+</div>
+
+<!-- ============================================================ -->
+<h2 class="page-break">3. Tech Stack — Every Technology Explained</h2>
+
+<p class="section-intro">A "tech stack" is the combination of tools, languages, and services used to build an application. Think of it like the ingredients in a recipe.</p>
+
+<table>
+  <tr>
+    <th>Layer</th>
+    <th>Technology</th>
+    <th>What It Does (Simple Explanation)</th>
+    <th>Why We Chose It</th>
+  </tr>
+  <tr>
+    <td><strong>Frontend Framework</strong></td>
+    <td>React 18</td>
+    <td>The main JavaScript library that builds the user interface — all the buttons, forms, pages you see on screen</td>
+    <td>Most popular UI library, huge community, component-based (reusable pieces)</td>
+  </tr>
+  <tr>
+    <td><strong>Build Tool</strong></td>
+    <td>Vite</td>
+    <td>Packages and compiles all your code so browsers can run it. Like a factory that takes raw ingredients and packages them</td>
+    <td>Extremely fast, modern replacement for older tools like Webpack</td>
+  </tr>
+  <tr>
+    <td><strong>Styling</strong></td>
+    <td>Tailwind CSS v4</td>
+    <td>A CSS framework — instead of writing custom CSS, you use pre-built class names like <code>text-white</code>, <code>rounded-xl</code>, <code>p-4</code></td>
+    <td>Very fast to style, consistent design, no need to name CSS classes</td>
+  </tr>
+  <tr>
+    <td><strong>Routing</strong></td>
+    <td>React Router v6</td>
+    <td>Controls which page/component shows based on the URL. When you go to /dashboard it shows the dashboard, /warranties shows your warranty list</td>
+    <td>Standard routing library for React apps</td>
+  </tr>
+  <tr>
+    <td><strong>State Management</strong></td>
+    <td>Zustand</td>
+    <td>A store that holds shared data (like the logged-in user info) that multiple components need to access</td>
+    <td>Simpler than Redux, minimal boilerplate, works perfectly for this scale</td>
+  </tr>
+  <tr>
+    <td><strong>Authentication</strong></td>
+    <td>Firebase Auth</td>
+    <td>Handles login, signup, Google OAuth, and password reset. We don't store passwords — Firebase does it securely</td>
+    <td>Free, secure, handles complex auth flows (Google sign-in, email verification) out of the box</td>
+  </tr>
+  <tr>
+    <td><strong>Database</strong></td>
+    <td>Supabase (PostgreSQL)</td>
+    <td>Stores all the actual data — users, products, warranties, claims, notifications. Supabase is a hosted PostgreSQL database with a nice dashboard</td>
+    <td>Free tier, real-time subscriptions, Row Level Security (RLS) for data privacy, SQL support</td>
+  </tr>
+  <tr>
+    <td><strong>File Storage</strong></td>
+    <td>Cloudinary</td>
+    <td>Stores uploaded images and PDFs (invoice receipts). When you upload a file, it goes to Cloudinary and we save the link in Supabase</td>
+    <td>Free tier, handles image optimization automatically, easy upload SDK</td>
+  </tr>
+  <tr>
+    <td><strong>OCR (Text from Images)</strong></td>
+    <td>Tesseract.js + pdfjs-dist + OpenRouter Vision</td>
+    <td>Reads text from invoice images/PDFs. Tesseract.js runs in the browser (no server needed). pdfjs extracts text from digital PDFs directly. OpenRouter sends images to an AI model for smarter extraction</td>
+    <td>Tesseract is free and client-side. pdfjs is perfect for digital PDFs. OpenRouter gives access to Gemini Flash for better accuracy</td>
+  </tr>
+  <tr>
+    <td><strong>AI Chatbot</strong></td>
+    <td>Groq API (llama-3.3-70b)</td>
+    <td>Powers the WarrantyBot floating chat popup. You type a question, it sends to Groq's API, and the AI responds. Llama is an open-source AI model by Meta</td>
+    <td>Free tier with 14,400 requests/day, extremely fast inference speed</td>
+  </tr>
+  <tr>
+    <td><strong>Maps</strong></td>
+    <td>React-Leaflet + OpenStreetMap</td>
+    <td>Shows service centers on an interactive map. No Google Maps API key needed — uses free OpenStreetMap tiles</td>
+    <td>Completely free, no API key required, dark map theme available via CARTO tiles</td>
+  </tr>
+  <tr>
+    <td><strong>Email Alerts</strong></td>
+    <td>Resend + Supabase Edge Functions</td>
+    <td>Sends warranty expiry alert emails. Supabase Edge Functions are serverless functions (backend code that runs without a server). Resend is an email delivery service</td>
+    <td>Resend free tier: 3000 emails/month. Edge Functions run on Deno (serverless)</td>
+  </tr>
+  <tr>
+    <td><strong>Charts</strong></td>
+    <td>Recharts</td>
+    <td>Draws the bar charts and pie charts on the dashboard showing warranty statistics</td>
+    <td>Simple React-based chart library, customizable colors</td>
+  </tr>
+  <tr>
+    <td><strong>Icons</strong></td>
+    <td>Lucide React</td>
+    <td>Provides all the icons used in the app (mail icon, bell icon, shield icon, etc.) as React components</td>
+    <td>Clean, consistent icon set, tree-shakeable (only loads icons you use)</td>
+  </tr>
+  <tr>
+    <td><strong>Toast Notifications</strong></td>
+    <td>react-hot-toast</td>
+    <td>Shows the small popup messages at the top-right (e.g. "Product added successfully!" or error messages)</td>
+    <td>Simple, lightweight, looks good</td>
+  </tr>
+</table>
+
+<!-- ============================================================ -->
+<h2 class="page-break">4. Languages Used</h2>
+
+<table>
+  <tr>
+    <th>Language</th>
+    <th>Where Used</th>
+    <th>What It Does</th>
+  </tr>
+  <tr>
+    <td><strong>JavaScript (JS)</strong></td>
+    <td>All frontend code (.js, .jsx files in /src)</td>
+    <td>The primary programming language for the entire frontend. Handles logic, API calls, user interactions</td>
+  </tr>
+  <tr>
+    <td><strong>JSX</strong></td>
+    <td>React component files (.jsx)</td>
+    <td>JavaScript + HTML mixed together. It looks like HTML but is actually JavaScript. React uses this to describe what the UI should look like</td>
+  </tr>
+  <tr>
+    <td><strong>CSS</strong></td>
+    <td>src/styles/index.css</td>
+    <td>Defines the dark theme variables (colors, shadows), custom animations (floating particles, glowing effects), utility classes</td>
+  </tr>
+  <tr>
+    <td><strong>SQL</strong></td>
+    <td>supabase/migrations/*.sql</td>
+    <td>Database language. Used to create tables, define relationships, write stored procedures (functions), and set up Row Level Security policies</td>
+  </tr>
+  <tr>
+    <td><strong>TypeScript (TS)</strong></td>
+    <td>supabase/functions/*.ts (Edge Functions)</td>
+    <td>JavaScript with types. Used for Supabase Edge Functions which run on Deno (a TypeScript runtime). Helps catch errors before they happen</td>
+  </tr>
+  <tr>
+    <td><strong>HTML</strong></td>
+    <td>index.html (entry point)</td>
+    <td>The single HTML file that loads the entire React app. React takes over from here and builds everything dynamically</td>
+  </tr>
+</table>
+
+<!-- ============================================================ -->
+<h2>5. Project Structure — What Each Folder Does</h2>
+
+<pre>
+warranty-vault/
+├── public/                 # Static files served as-is (logo.png)
+├── src/
+│   ├── components/         # Reusable UI pieces
+│   │   ├── auth/           # Login/signup guards (ProtectedRoute, AdminRoute)
+│   │   ├── dashboard/      # Stat cards, charts for dashboard
+│   │   ├── layout/         # App shell (Sidebar, TopBar, AppLayout, MobileNav)
+│   │   ├── product/        # ReceiptUploader, OCRPreview, GmailImporter
+│   │   ├── ui/             # Generic components (Button, Input, Spinner, WarrantyBot)
+│   │   └── warranty/       # WarrantyCard, WarrantyDetail, WarrantyEditModal
+│   ├── config/             # Setup files for Firebase, Supabase, Cloudinary
+│   ├── hooks/              # Custom React hooks (useAuth, useWarranties, useOCR)
+│   ├── pages/              # One file per page/route
+│   ├── services/           # All data access logic (no UI code here)
+│   ├── stores/             # Zustand global state stores
+│   ├── styles/             # CSS theme variables and animations
+│   └── utils/              # Helper functions (date formatting, validators, etc.)
+├── supabase/
+│   ├── functions/          # Supabase Edge Functions (serverless backend)
+│   └── migrations/         # SQL files that set up the database
+└── .env.local              # Secret API keys (never commit to Git!)
+</pre>
+
+<!-- ============================================================ -->
+<h2 class="page-break">6. Database Design — The Foundation</h2>
+
+<p class="section-intro">The database is the most critical part. If this is wrong, nothing works. We designed 8 tables in PostgreSQL.</p>
+
+<h3>The 8 Tables</h3>
+
+<table>
+  <tr>
+    <th>Table</th>
+    <th>What It Stores</th>
+    <th>Key Columns</th>
+  </tr>
+  <tr>
+    <td><code>users</code></td>
+    <td>App user accounts (linked to Firebase)</td>
+    <td>id, firebase_uid, email, display_name, avatar_url</td>
+  </tr>
+  <tr>
+    <td><code>products</code></td>
+    <td>Physical products (phone, laptop, fridge)</td>
+    <td>id, user_id, product_name, brand, model_number, serial_number, category, purchase_date, purchase_price</td>
+  </tr>
+  <tr>
+    <td><code>warranties</code></td>
+    <td>Warranty records per product</td>
+    <td>id, product_id, user_id, start_date, end_date, warranty_duration_months, warranty_type</td>
+  </tr>
+  <tr>
+    <td><code>warranties_with_status</code></td>
+    <td>A VIEW (not a real table) — adds computed "active/expiring/expired" status to warranties</td>
+    <td>All warranty columns + computed status field</td>
+  </tr>
+  <tr>
+    <td><code>documents</code></td>
+    <td>Uploaded invoices/receipts (stored in Cloudinary, link here)</td>
+    <td>id, product_id, file_url, public_id, file_name, mime_type, ocr_raw_text</td>
+  </tr>
+  <tr>
+    <td><code>claims</code></td>
+    <td>Warranty claim submissions</td>
+    <td>id, warranty_id, user_id, issue_summary, issue_details, claim_status, submitted_at</td>
+  </tr>
+  <tr>
+    <td><code>notifications</code></td>
+    <td>In-app expiry alert notifications</td>
+    <td>id, user_id, warranty_id, type, message, is_read, channel</td>
+  </tr>
+  <tr>
+    <td><code>service_centers</code></td>
+    <td>Authorized repair shops</td>
+    <td>id, brand, name, address, city, area, pincode, phone, email, map_url</td>
+  </tr>
+</table>
+
+<h3>Why a View for Status?</h3>
+<p>We can't store "active/expired" as a column because it changes every day (a warranty that's active today might be expired tomorrow). So we use a database VIEW that calculates it on the fly:</p>
+<pre>
+-- Each time you query this view, it runs this logic:
+SELECT *,
+  CASE
+    WHEN end_date &lt; CURRENT_DATE THEN 'expired'
+    WHEN end_date &lt;= CURRENT_DATE + 30 days THEN 'expiring_soon'
+    ELSE 'active'
+  END AS status
+FROM warranties;
+</pre>
+
+<h3>Row Level Security (RLS)</h3>
+<p>RLS ensures users can only see their own data. Without it, User A could see User B's warranties. Each table has a policy like:</p>
+<pre>
+-- User can only access rows where user_id matches their own ID
+CREATE POLICY "Users access own data" ON warranties
+  FOR ALL USING (user_id = get_current_user_id());
+</pre>
+
+<!-- ============================================================ -->
+<h2 class="page-break">7. Authentication — How Login Works</h2>
+
+<p class="section-intro">We use TWO systems together: Firebase for login identity, and Supabase for storing user data. This is called a "dual auth system."</p>
+
+<h3>The Problem</h3>
+<p>Firebase Auth is excellent for handling login (Google OAuth, email/password, password reset). But our data is in Supabase. We need to link the two.</p>
+
+<h3>The Solution</h3>
+<ol>
+  <li>User logs in via Firebase (Google OAuth or email/password)</li>
+  <li>Firebase gives us a <code>uid</code> (unique user ID) like <code>"Un0hSnDHjgMTHT2d9I9xcBG"</code></li>
+  <li>Our app calls a Supabase function <code>sync_firebase_user()</code> which creates/updates a row in the <code>users</code> table using that Firebase UID</li>
+  <li>Supabase returns the user's internal UUID (like <code>"f47ac10b-58cc-..."</code>)</li>
+  <li>All subsequent Supabase queries use this UUID — NOT the Firebase UID</li>
+</ol>
+
+<h3>The <code>useAuth</code> Hook</h3>
+<p>This is a custom React hook that runs when the app loads. It:</p>
+<ul>
+  <li>Listens for Firebase auth state changes (login/logout)</li>
+  <li>On login: syncs the user to Supabase, fires expiry notifications</li>
+  <li>On logout: clears all user data from Zustand stores</li>
+  <li>Fires on tab visibility change (when user returns to the app)</li>
+</ul>
+
+<!-- ============================================================ -->
+<h2>8. How OCR Works — Reading Invoices Automatically</h2>
+
+<p class="section-intro">OCR (Optical Character Recognition) is how computers read text from images. Imagine taking a photo of an invoice and the app automatically filling in the product name, price, and date.</p>
+
+<h3>Three-Layer OCR Strategy</h3>
+
+<h4>Layer 1: PDF Text Extraction (Best Accuracy)</h4>
+<p>If the file is a digital PDF (like an email invoice from Amazon/Flipkart), the text is already embedded in the file. We use <strong>pdfjs-dist</strong> to extract it directly — no image recognition needed, 100% accurate.</p>
+<pre>
+const content = await page.getTextContent();
+const text = content.items.map(item => item.str).join(" ");
+</pre>
+
+<h4>Layer 2: AI Vision (High Accuracy for Images)</h4>
+<p>If the file is an image (photo of a paper invoice), we send it to <strong>OpenRouter</strong> which routes it to Google's <strong>Gemini Flash 1.5</strong> AI model. The AI reads the image like a human and returns structured JSON with all fields.</p>
+<pre>
+// We ask the AI:
+"Extract product name, brand, model number, serial number,
+purchase date, price, retailer, warranty months from this invoice.
+Return as JSON."
+
+// AI responds:
+{
+  "productName": "ASUS VivoBook 15",
+  "brand": "ASUS",
+  "modelNumber": "X515EA",
+  "price": 45999,
+  "purchaseDate": "2024-11-15",
+  ...
+}
+</pre>
+
+<h4>Layer 3: Tesseract.js (Fallback)</h4>
+<p>If both above fail, we use <strong>Tesseract.js</strong> — a JavaScript port of the open-source Tesseract OCR engine. It runs entirely in the browser (no server needed) and uses regex patterns to find dates, prices, and brand names in the extracted text.</p>
+
+<!-- ============================================================ -->
+<h2 class="page-break">9. How the Gmail Import Works</h2>
+
+<p class="section-intro">Instead of manually uploading an invoice, users can let the app scan their Gmail inbox for product purchase emails.</p>
+
+<h3>Step-by-Step Flow</h3>
+
+<ol>
+  <li><strong>OAuth Permission:</strong> User clicks "Connect Gmail". A Google popup appears asking to allow read access to Gmail. This uses <em>Firebase GoogleAuthProvider</em> with the <code>gmail.readonly</code> scope.</li>
+  <li><strong>Search Inbox:</strong> The app calls the Gmail API to search for emails matching:<br><code>has:attachment (asus OR samsung OR lg OR reliance OR dell) newer_than:2y</code></li>
+  <li><strong>List Emails:</strong> Found emails are displayed — showing subject, sender, date, and attachment pills (PDF/image files)</li>
+  <li><strong>Pick Attachment:</strong> User clicks an attachment. The app downloads it using the Gmail API.</li>
+  <li><strong>OCR:</strong> The attachment is fed through the OCR pipeline, which extracts all warranty fields automatically.</li>
+  <li><strong>Review &amp; Save:</strong> Auto-filled form appears. User can edit any field and click "Add to Warranties".</li>
+</ol>
+
+<h3>Why Firebase for Gmail OAuth?</h3>
+<p>Firebase's GoogleAuthProvider can request extra Google API scopes (like Gmail) during login. This is the most straightforward way to get a Gmail API access token in a React app without setting up a separate backend OAuth flow.</p>
+
+<!-- ============================================================ -->
+<h2>10. The Service Layer Pattern</h2>
+
+<p class="section-intro">All database operations are in separate "service" files. UI components never talk to the database directly. This is like having a waiter (service) between you (UI) and the kitchen (database).</p>
+
+<h3>Why This Matters</h3>
+<p>If you ever change the database (say, from Supabase to Firebase Firestore), you only need to update the service files — not every component that uses data.</p>
+
+<pre>
+// BAD — component talks to DB directly:
+function WarrantyCard() {
+  const { data } = await supabase.from("warranties").select("*");
+  // UI mixed with data logic
+}
+
+// GOOD — component uses service:
+function WarrantyCard() {
+  const warranties = await warrantyService.getAllForUser(userId);
+  // Clean separation
+}
+</pre>
+
+<h3>Key Services</h3>
+<table>
+  <tr><th>Service File</th><th>What It Does</th></tr>
+  <tr><td><code>auth.service.js</code></td><td>Firebase sign-in, sign-out, password reset</td></tr>
+  <tr><td><code>warranty.service.js</code></td><td>Fetch, create, update, delete warranties (always uses the view)</td></tr>
+  <tr><td><code>product.service.js</code></td><td>Add product + warranty in one transaction, upload receipt to Cloudinary</td></tr>
+  <tr><td><code>ocr.service.js</code></td><td>Extract text from images/PDFs, parse warranty fields</td></tr>
+  <tr><td><code>gmail.service.js</code></td><td>Get Gmail access token, search inbox, fetch attachments</td></tr>
+  <tr><td><code>claim.service.js</code></td><td>Create and fetch warranty claims</td></tr>
+  <tr><td><code>serviceCenter.service.js</code></td><td>Search service centers by brand and Mumbai area</td></tr>
+  <tr><td><code>admin.service.js</code></td><td>Platform-wide stats, all users/warranties/claims for admin</td></tr>
+</table>
+
+<!-- ============================================================ -->
+<h2 class="page-break">11. State Management with Zustand</h2>
+
+<p class="section-intro">State is data that changes over time. "Global state" is data that multiple different components need to know about simultaneously.</p>
+
+<h3>The Problem Without State Management</h3>
+<p>Imagine the TopBar (header) needs to show "Welcome, John" and the Sidebar needs to know if John is logged in. Without global state, you'd have to pass John's user data through every component in between — this is called "prop drilling" and it gets messy fast.</p>
+
+<h3>Zustand Stores</h3>
+<p>We have 3 Zustand stores (global state containers):</p>
+
+<table>
+  <tr><th>Store</th><th>What It Holds</th><th>Used By</th></tr>
+  <tr>
+    <td><code>authStore</code></td>
+    <td>Current Firebase user + Supabase user record</td>
+    <td>Every component that needs user info</td>
+  </tr>
+  <tr>
+    <td><code>warrantyStore</code></td>
+    <td>Array of user's warranties + active filters (search, status, category)</td>
+    <td>MyWarrantiesPage, WarrantyCard, Dashboard</td>
+  </tr>
+  <tr>
+    <td><code>uiStore</code></td>
+    <td>UI state — sidebar open/closed, active modals</td>
+    <td>Sidebar, modal components</td>
+  </tr>
+</table>
+
+<div class="note">
+  <strong>Important gotcha we hit:</strong> Zustand drops JavaScript getters when you call <code>set()</code>. So we moved <code>filteredWarranties</code> out of the store and into a <code>useWarranties</code> hook using React's <code>useMemo</code>. This was a subtle bug that caused the warranties list to always appear empty.
+</div>
+
+<!-- ============================================================ -->
+<h2>12. Routing — How Pages Work</h2>
+
+<p class="section-intro">In a traditional website, each page is a separate HTML file. In a React SPA (Single Page Application), there's ONE HTML file and JavaScript swaps components in and out based on the URL.</p>
+
+<h3>Our Route Structure</h3>
+<pre>
+/ (root)
+├── /login              → LoginPage (public)
+├── /signup             → SignupPage (public)
+└── [Protected routes — must be logged in]
+    ├── /dashboard      → DashboardPage
+    ├── /warranties     → MyWarrantiesPage
+    ├── /add-product    → AddProductPage
+    ├── /gmail-import   → GmailImportPage
+    ├── /claim-assistant → ClaimAssistantPage
+    ├── /service-centers → ServiceCentersPage
+    ├── /profile        → ProfilePage
+    └── /admin          → AdminPage (admin only)
+</pre>
+
+<h3>Route Guards</h3>
+<ul>
+  <li><strong>ProtectedRoute</strong> — redirects to <code>/login</code> if not logged in</li>
+  <li><strong>AdminRoute</strong> — redirects to <code>/dashboard</code> if not the admin email</li>
+  <li><strong>UserOnlyRoute</strong> — redirects admin to <code>/admin</code> (admin can't use regular user pages)</li>
+</ul>
+
+<!-- ============================================================ -->
+<h2 class="page-break">13. Key Features Deep Dive</h2>
+
+<h3>A. Smart Expiry Notifications</h3>
+<p>We use Supabase's <strong>pg_cron</strong> extension (a PostgreSQL scheduler) to run a function daily at 9 AM UTC. This function checks all warranties and creates in-app notifications for those expiring in 0, 1, 7, 30, or 90 days.</p>
+<p>The bell icon in the top bar shows unread notification count. Clicking it opens a dropdown panel. We use <strong>Supabase Realtime</strong> so the count updates live without refreshing the page.</p>
+
+<h3>B. The Claim Assistant Wizard</h3>
+<p>A 3-step form that guides users through filing a warranty claim:</p>
+<ol>
+  <li><strong>Step 1:</strong> Select product (only shows active/expiring warranties)</li>
+  <li><strong>Step 2:</strong> Describe the issue (summary + detailed description)</li>
+  <li><strong>Step 3:</strong> Review details, see nearby service centers, official brand warranty links, submit claim</li>
+</ol>
+
+<h3>C. WarrantyBot (AI Chat)</h3>
+<p>A floating chat button appears on every page. When clicked, it opens a chat panel powered by Groq's free API using the <strong>llama-3.3-70b-versatile</strong> model. The system prompt is pre-loaded with the user's warranty data so the AI can answer questions like "Which of my warranties expire this month?"</p>
+
+<h3>D. Admin Panel</h3>
+<p>Only accessible to the admin email (<code>triocoders9626@gmail.com</code>). Has 5 tabs:</p>
+<ul>
+  <li><strong>Overview:</strong> Platform stats + charts (total users, warranties, claims, category breakdown)</li>
+  <li><strong>Users:</strong> All registered users with search</li>
+  <li><strong>Warranties:</strong> All warranties with status filter</li>
+  <li><strong>Claims:</strong> All claims with the claimant's name, email, avatar</li>
+  <li><strong>System:</strong> Tech stack status, database schema, environment variable checker</li>
+</ul>
+
+<h3>E. Service Centers</h3>
+<p>Shows authorized repair centers in Mumbai. Instead of a generic "city" search (all of Mumbai is one city), users can filter by specific Mumbai areas: Andheri, Bandra, BKC, Borivali, Dadar, Dharavi, Kandivali, Kurla, Lower Parel, Malad, Powai, Saki Naka, Thane, Vashi.</p>
+<p>The map uses <strong>React-Leaflet</strong> with dark CARTO tiles — no Google Maps API key required.</p>
+
+<!-- ============================================================ -->
+<h2 class="page-break">14. The Development Workflow</h2>
+
+<p class="section-intro">How we actually wrote the code day-to-day.</p>
+
+<h3>Local Development</h3>
+<pre>
+cd "D:/Hackhive Hack/warranty-vault"
+npm run dev       # Starts at http://localhost:5173
+</pre>
+<p>Vite provides <strong>Hot Module Replacement (HMR)</strong> — when you save a file, the browser updates instantly without a full page reload.</p>
+
+<h3>Database Migrations</h3>
+<p>Every database change is saved as a numbered SQL file in <code>supabase/migrations/</code>. To apply changes, we paste them into the Supabase SQL Editor and run them. This gives us a full history of every database change.</p>
+
+<h3>Environment Variables</h3>
+<p>API keys and secrets are in <code>.env.local</code>. Vite makes them available in code as <code>import.meta.env.VITE_VARIABLE_NAME</code>. They're prefixed with <code>VITE_</code> so Vite knows to include them in the frontend bundle.</p>
+
+<div class="note">
+  <strong>Security note:</strong> <code>.env.local</code> should NEVER be committed to Git. It's in <code>.gitignore</code>. Anyone who gets this file gets access to all your services.
+</div>
+
+<!-- ============================================================ -->
+<h2>15. Challenges We Faced and How We Solved Them</h2>
+
+<table>
+  <tr>
+    <th>Challenge</th>
+    <th>What Went Wrong</th>
+    <th>How We Fixed It</th>
+  </tr>
+  <tr>
+    <td>Firebase + Supabase auth conflict</td>
+    <td>Supabase RLS policies use <code>auth.uid()</code> which only works with Supabase's own JWTs. Firebase tokens aren't recognized.</td>
+    <td>Opened all RLS policies to <code>USING (true)</code> and enforced data isolation at the application layer (<code>.eq("user_id", userId)</code> in every query)</td>
+  </tr>
+  <tr>
+    <td>User session not loading</td>
+    <td><code>dbUser</code> was null because the Supabase user sync was failing silently</td>
+    <td>Rewrote <code>useAuth.js</code> to always call the RPC first, with a direct upsert fallback, and proper error logging</td>
+  </tr>
+  <tr>
+    <td>Warranty status always empty</td>
+    <td>Zustand silently drops JavaScript getters when <code>set()</code> is called — <code>filteredWarranties</code> getter was deleted on every state update</td>
+    <td>Moved <code>filteredWarranties</code> out of the store into a <code>useWarranties</code> hook using <code>useMemo</code></td>
+  </tr>
+  <tr>
+    <td>Blank page on warranty card click</td>
+    <td><code>formatDate()</code> from date-fns threw a <code>RangeError</code> for invalid/null dates</td>
+    <td>Wrapped in try/catch with <code>isNaN()</code> check, added an ErrorBoundary component</td>
+  </tr>
+  <tr>
+    <td>Gmail popup blocked</td>
+    <td><code>Cross-Origin-Opener-Policy</code> header prevented Firebase popup from communicating back</td>
+    <td>Added <code>same-origin-allow-popups</code> header in <code>vite.config.js</code></td>
+  </tr>
+  <tr>
+    <td>OCR only reading date and brand</td>
+    <td>Regex patterns were too narrow, only catching a few fields</td>
+    <td>Added 8 specific regex patterns + fallback to AI vision model for images</td>
+  </tr>
+  <tr>
+    <td>Notifications missing warranties</td>
+    <td>SQL checked <code>end_date = CURRENT_DATE + exact_days</code> — a warranty expiring in 15 days matched no window</td>
+    <td>Changed to range checks: <code>end_date BETWEEN day1 AND day7</code> etc.</td>
+  </tr>
+</table>
+
+<!-- ============================================================ -->
+<h2 class="page-break">16. Design System</h2>
+
+<p class="section-intro">All pages share the same visual language — dark navy background, purple accents, glassmorphism cards.</p>
+
+<h3>Color Palette</h3>
+<table>
+  <tr><th>Variable</th><th>Color</th><th>Used For</th></tr>
+  <tr><td><code>--bg-base</code></td><td>#06061a (very dark navy)</td><td>Page background</td></tr>
+  <tr><td><code>--bg-card</code></td><td>#0f1029 (dark navy)</td><td>Cards, panels, modals</td></tr>
+  <tr><td><code>--accent</code></td><td>#7c3aed (purple)</td><td>Primary buttons, active states</td></tr>
+  <tr><td><code>--accent-light</code></td><td>#a78bfa (light purple)</td><td>Text highlights, icons</td></tr>
+  <tr><td><code>--border</code></td><td>rgba(255,255,255,0.07)</td><td>Card borders, dividers</td></tr>
+</table>
+
+<h3>Design Principles</h3>
+<ul>
+  <li><strong>No light colors</strong> — never use <code>bg-white</code> or <code>text-gray-900</code>. Always dark backgrounds.</li>
+  <li><strong>Rounded corners everywhere</strong> — <code>rounded-xl</code> (12px) or <code>rounded-2xl</code> (16px)</li>
+  <li><strong>Glassmorphism</strong> — cards use semi-transparent backgrounds with subtle borders</li>
+  <li><strong>Purple glow effects</strong> — primary buttons have a purple box-shadow glow (<code>.btn-glow</code>)</li>
+</ul>
+
+<!-- ============================================================ -->
+<h2>17. Summary — The Full Picture</h2>
+
+<p>Here's how all the pieces connect when a user uploads an invoice:</p>
+
+<ol>
+  <li><strong>User opens app</strong> → Firebase Auth checks if logged in → <code>useAuth</code> syncs user to Supabase → <code>authStore</code> stores user data</li>
+  <li><strong>User goes to Add Product</strong> → React Router renders <code>AddProductPage</code></li>
+  <li><strong>User uploads invoice image</strong> → <code>ReceiptUploader</code> component → <code>ocrService.extractFromImage()</code></li>
+  <li><strong>OCR runs</strong> → OpenRouter Vision API reads the image → returns JSON with all product fields</li>
+  <li><strong>Form auto-fills</strong> → <code>handleOCRExtracted()</code> sets form state in React</li>
+  <li><strong>User clicks Save</strong> → <code>productService.addProductWithWarranty()</code> runs:
+    <ul>
+      <li>INSERT into <code>products</code> table</li>
+      <li>Compute warranty end date</li>
+      <li>INSERT into <code>warranties</code> table</li>
+      <li>Upload image to Cloudinary → INSERT into <code>documents</code> table</li>
+    </ul>
+  </li>
+  <li><strong>User redirected</strong> to My Warranties → <code>warrantyService.getAllForUser()</code> fetches from <code>warranties_with_status</code> view → Zustand store updated → React re-renders the list</li>
+  <li><strong>Next day at 9 AM UTC</strong> → Supabase pg_cron runs → checks expiry dates → creates notifications in DB → Supabase Realtime pushes update → notification bell count updates in real time</li>
+</ol>
+
+<br>
+<hr>
+<p style="text-align:center; color:#888; font-size:9pt;">
+  WarrantyVault — Built for Hackhive Hackathon | Team TrioCoders | 2026
+</p>
+
+</body>
+</html>

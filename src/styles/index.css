@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark-950: #06061a;
+  --color-dark-900: #0a0b1e;
+  --color-dark-800: #0f1029;
+  --color-dark-700: #151630;
+  --color-dark-600: #1c1e3a;
+  --color-dark-500: #252745;
+  --color-purple-400: #a78bfa;
+  --color-purple-500: #8b5cf6;
+  --color-purple-600: #7c3aed;
+  --color-purple-700: #6d28d9;
+}
+
+:root {
+  --bg-base: #06061a;
+  --bg-card: #0f1029;
+  --bg-card-hover: #151630;
+  --border: rgba(255, 255, 255, 0.07);
+  --border-hover: rgba(255, 255, 255, 0.14);
+  --accent: #7c3aed;
+  --accent-light: #a78bfa;
+  --glow: 0 0 24px rgba(124, 58, 237, 0.35);
+  --glow-sm: 0 0 12px rgba(124, 58, 237, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-base);
+  color: #fff;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-base); }
+::-webkit-scrollbar-thumb { background: #2a2b4a; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+/* Card glass */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+/* Purple gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #a78bfa 0%, #60a5fa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glow button */
+.btn-glow:hover {
+  box-shadow: var(--glow);
+}
+
+/* Subtle grid background pattern */
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(124, 58, 237, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(124, 58, 237, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Active nav glow */
+.nav-active {
+  background: linear-gradient(90deg, rgba(124,58,237,0.2) 0%, rgba(124,58,237,0.05) 100%);
+  border-left: 2px solid #7c3aed;
+}
